@@ -1,1 +1,79 @@
-# optimizedduckgame
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>duck :O</title>
+</head>
+<body>
+<h1 id="duck1"></h1>
+<h1 id="duck2"></h1>
+<h1 id="duck3"></h1>
+<h1 id="duck4"></h1>
+<h1 id="duck5"></h1>
+<script>
+  var duckplacex = 3;
+  var duckplacey = 3;
+  var inf = 1;
+  document.querySelector("#duck3").innerHTML="⬜⬜🦆⬜⬜"
+    document.querySelector("#duck1").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck2").innerHTML="⬜⬜⬜⬜⬜"
+   document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck5").innerHTML="⬜⬜⬜⬜⬜"
+  document.addEventListener('keydown', (event) => {
+    if (event.key === "ArrowUp"){
+      if (!duckplacey === 1){
+        --duckplacey
+      }
+  }
+    if (event.key === "ArrowDown"){
+  if (!duckplacey === 5){
+        ++duckplacey
+      }
+  }
+    if (event.key === "ArrowLeft"){
+  if (!duckplacex === 1){
+        ++duckplacex
+      }
+    }
+    if (event.key === "ArrowRight"){
+  if (!duckplacex === 5){
+        --duckplacex
+      }
+    }
+});
+while (duckplacey === 3){
+    document.querySelector("#duck1").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck2").innerHTML="⬜⬜⬜⬜⬜"
+   document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck5").innerHTML="⬜⬜⬜⬜⬜"
+}
+while (duckplacey === 1){
+    document.querySelector("#duck3").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck2").innerHTML="⬜⬜⬜⬜⬜"
+   document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck5").innerHTML="⬜⬜⬜⬜⬜"
+}
+while (duckplacey === 2){
+    document.querySelector("#duck1").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck3").innerHTML="⬜⬜⬜⬜⬜"
+   document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck5").innerHTML="⬜⬜⬜⬜⬜"
+}
+while (duckplacey === 4){
+    document.querySelector("#duck1").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck2").innerHTML="⬜⬜⬜⬜⬜"
+   document.querySelector("#duck3").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck5").innerHTML="⬜⬜⬜⬜⬜"
+}
+while (duckplacey === 5){
+    document.querySelector("#duck1").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck2").innerHTML="⬜⬜⬜⬜⬜"
+   document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜⬜"
+    document.querySelector("#duck3").innerHTML="⬜⬜⬜⬜⬜"
+}
+while (duckplacex === 1 && duckplacey === 5){
+    document.querySelector("#duck5").innerHTML="🦆⬜⬜⬜⬜"
+}
+</script>
+</body>
+</html>
