@@ -22,22 +22,22 @@
   document.addEventListener('keydown', (event) => {
     if (event.key === "ArrowUp"){
       if (!duckplacey === 1){
-        --duckplacey
+duckplacey = --duckplacey
       }
   }
     if (event.key === "ArrowDown"){
   if (!duckplacey === 5){
-        ++duckplacey
+duckplacey = ++duckplacey
       }
   }
     if (event.key === "ArrowLeft"){
   if (!duckplacex === 1){
-        ++duckplacex
+        duckplacex = ++duckplacex
       }
     }
     if (event.key === "ArrowRight"){
   if (!duckplacex === 5){
-        --duckplacex
+        duckplacex = --duckplacex
       }
     }
 });
