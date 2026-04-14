@@ -21,23 +21,23 @@
     document.querySelector("#duck5").innerHTML="⬜⬜⬜⬜⬜"
   document.addEventListener('keydown', (event) => {
     if (event.key === "ArrowUp"){
-      if !(duckplacey === 1){
-duckplacey = --duckplacey
+      if (duckplacey != 1){
+--duckplacey;
       }
   }
     if (event.key === "ArrowDown"){
-  if !(duckplacey === 5){
-duckplacey = ++duckplacey
+  if (duckplacey != 5){
+++duckplacey;
       }
   }
     if (event.key === "ArrowLeft"){
-  if !(duckplacex === 1){
-        duckplacex = ++duckplacex
+  if (duckplacex != 1){
+        ++duckplacex;
       }
     }
     if (event.key === "ArrowRight"){
-  if !(duckplacex === 5){
-        duckplacex = --duckplacex
+  if (duckplacex != 5){
+        --duckplacex;
       }
     }
 });
